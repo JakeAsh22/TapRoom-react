@@ -7,7 +7,7 @@ import Error404 from './Error404'
 import AboutUs from './AboutUs'
 import Home from './Home'
 import StorySuggestion from './StorySuggestion'
-import Image from '../assets/images/background.jpg'
+import Image from '../assets/images/wood_background.jpg'
 
 function App(){
   const BackgroundStyle = {
@@ -27,7 +27,7 @@ function App(){
       
       <Header/>
       <Switch>
-      <Route path='/' component={ViewStories} />
+        <Route exact path='/' component={ViewStories} />
         <Route exact path='/AboutUs' component={AboutUs} /> 
         <Route exact path='/StorySuggestion' component={StorySuggestion} />
         <Route component={Error404} />

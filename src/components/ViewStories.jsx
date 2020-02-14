@@ -24,17 +24,14 @@ var masterViewStories = [
 
 function ViewStories(){
   const PageStyle = {
-    backgroundColor: '#e3d3b5'
+    backgroundColor: '#b8a98f'
   }
 
   return (
     <div>
       <h1><style jsx> {`
     h1 {
-      color: black;
-    }
-    h1:hover {
-      color: green;
+      color: #bab4b2;
     }
     `}</style>View Stories</h1>
      
