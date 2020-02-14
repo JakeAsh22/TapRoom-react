@@ -45,7 +45,7 @@ function ViewStories(){
     }
 
     }
-    `}</style>Wecome to the Epicodus Tap Room</h1>
+    `}</style>Wecome to Buzzed Bob's Bar</h1>
      
       <hr/>
       <div style = {BoxStyle}>
