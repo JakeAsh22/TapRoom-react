@@ -1,25 +1,42 @@
-import React from 'react';
-import Nav from './Nav';
-import SeasonSideBar from './SeasonSideBar';
-import MainSchedule from './MainSchedule';
-import "./../styles.css";
-import { Switch, Route } from 'react-router-dom';
-import About from './About';
 
+import React from 'react'
+import Header from './Header'
+import Stories from './Stories'
+import { Switch, Route } from 'react-router-dom'
+import ViewStories from './ViewStories'
+import Error404 from './Error404'
+import AboutUs from './AboutUs'
+import Home from './Home'
+import StorySuggestion from './StorySuggestion'
+import Image from '../assets/images/wood_background.jpg'
 
 function App(){
-    return (
-        <div>
-            <Nav />
-            <switch>
-                <div className="two-columns">
-                    <SeasonSideBar />
-                    < Route exact path='/' component={MainSchedule} />
-                    <Route path='/about' component={About}/>
-                </div>
-            </switch>
-        </div>
-    );
-}
+    const BackgroundStyle = {
+    // /* The image used */
+        backgroundImage: `url(${Image})`,
 
-export default App;
+        /* Full height */
+        backgroundPosition: 'fixed', 
+        backgroundSize: 'cover',
+        backgroundRepeat: 'repeat',
+        minHeight: '100vh',
+        minWidth: '100%'
+
+    }
+    return (
+      <div style={BackgroundStyle}>
+      
+          <Header/>
+          <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/AboutUs' component={AboutUs} /> 
+              <Route path='/ViewStories' component={ViewStories} />
+              <Route exact path='/StorySuggestion' component={StorySuggestion} />
+              <Route component={Error404} />
+            </Switch>
+      
+        </div>
+    )
+}
+//using exact above helps protect us from accidently loading too many things
+export default App
