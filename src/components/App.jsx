@@ -2,7 +2,6 @@
 import React from 'react'
 import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
-import ViewStories from './ViewStories'
 import Error404 from './Error404'
 import AboutUs from './AboutUs'
 import Home from './Home'
@@ -27,7 +26,7 @@ function App(){
       
       <Header/>
       <Switch>
-        <Route exact path='/' component={ViewStories} />
+        <Route exact path='/' component={Home} />
         <Route exact path='/AboutUs' component={AboutUs} /> 
         <Route exact path='/StorySuggestion' component={StorySuggestion} />
         <Route component={Error404} />
