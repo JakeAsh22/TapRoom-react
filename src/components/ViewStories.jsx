@@ -4,27 +4,35 @@ import Stories from './Stories'
 
 var masterViewStories = [
   {
-    names: 'Shirley Temple',
-    location: 'Long Johns Seedy Bar',
-    issue: 'The Bartender is watering down drinks!!!'
+    names: 'Miller Lite',
+    type: 'Pilsner',
+    abv: '4.2%'
   },
   {
-    names: 'Bob Marley',
-    location: '4B',
-    issue: 'Smoking mid'
+    names: 'Guinness',
+    type: 'Stout',
+    abv: '4.3%'
   },
   {
-    names: 'Imani and Jacob',
-    location: '9F',
-    issue: 'Donkey picture not displaying on hover in Zoology app.l :()'
+    names: 'Sour Monkey',
+    type: 'Sour',
+    abv: '9.5%'
   }
 
 ]
 
-
 function ViewStories(){
-  const PageStyle = {
-    backgroundColor: '#b8a98f'
+  const BoxStyle = {
+    marginLeft: '20px',
+    border: '15px #FFFFFF',
+    padding: '15px',
+    margin: '20px',
+    borderRadius: '5px',
+    fontFamily: 'Circular',
+    color: '#484848',
+    boxShadow: '0 16px 40px rgba(0,0,0,0.12)',
+    backgroundColor: '#b8a98f',
+    opacity: '0.85'
   }
 
   return (
@@ -40,11 +48,11 @@ function ViewStories(){
     `}</style>Wecome to the Epicodus Tap Room</h1>
      
       <hr/>
-      <div style = {PageStyle}>
+      <div style = {BoxStyle}>
         {masterViewStories.map((stories, index) =>
           <Stories names={stories.names}
-            location={stories.location}
-            issue={stories.issue}
+            type={stories.type}
+            abv={stories.abv}
             key={index}/>
         )}
       </div>

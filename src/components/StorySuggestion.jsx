@@ -11,20 +11,20 @@ function StorySuggestion(){
     h1:hover {
       color: green;
     }
-    `}</style>Suggest A Story</h1>
+    `}</style>Add a new tap</h1>
     
       <form>
         <input  
           type='text'
-          id='names'
-          placeholder="Submitter's Name"/>
+          id='name'
+          placeholder="Drink Name"/>
         <input 
           type='text'
-          id='location'
-          placeholder='Location'/>
-        <textarea
-          id='issue'
-          placeholder='Describe the Story.'/>
+          id='type'
+          placeholder='Type of drink'/>
+        <input
+          id='ABV'
+          placeholder='ABV (Alcohol by Volume)'/>
       </form>
     </div>
   )
