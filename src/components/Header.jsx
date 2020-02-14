@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 function Header() {
+
   const WordStyles = {
     fontFamily: 'Impact, Charcoal, sans-serif',
     color: 'white',
@@ -10,7 +11,8 @@ function Header() {
     opacity: '0.8'
   }
   return (
-    <div style ={WordStyles}>
+    <div style ={WordStyles}> 
+
       <Link to="/">Home</Link> | <Link to="/NewTap">Add a new tap</Link>
       <hr/>
     </div>

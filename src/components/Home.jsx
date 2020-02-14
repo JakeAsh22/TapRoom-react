@@ -1,6 +1,6 @@
 import React from 'react'
 import Stories from './Stories'
-
+import Beers from '../assets/images/beer.png'
 
 var masterViewStories = [
   {
@@ -22,6 +22,10 @@ var masterViewStories = [
 ]
 
 function ViewStories(){
+  const picStyle = {
+    height: '1px',
+    width: '1px'
+  }
   const BoxStyle = {
     marginLeft: '20px',
     border: '15px #FFFFFF',
@@ -37,6 +41,9 @@ function ViewStories(){
 
   return (
     <div>
+      <div style = {picStyle}>
+        <img src={Beers}/>
+      </div>
       <h1><style jsx> {`
     h1 {
       color: #bab4b2;
