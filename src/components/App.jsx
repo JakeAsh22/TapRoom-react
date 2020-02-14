@@ -11,32 +11,32 @@ import StorySuggestion from './StorySuggestion'
 import Image from '../assets/images/wood_background.jpg'
 
 function App(){
-    const BackgroundStyle = {
+  const BackgroundStyle = {
     // /* The image used */
-        backgroundImage: `url(${Image})`,
+    backgroundImage: `url(${Image})`,
 
-        /* Full height */
-        backgroundPosition: 'fixed', 
-        backgroundSize: 'cover',
-        backgroundRepeat: 'repeat',
-        minHeight: '100vh',
-        minWidth: '100%'
+    /* Full height */
+    backgroundPosition: 'fixed', 
+    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat',
+    minHeight: '100vh',
+    minWidth: '100%'
 
-    }
-    return (
-      <div style={BackgroundStyle}>
+  }
+  return (
+    <div style={BackgroundStyle}>
       
-          <Header/>
-          <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/AboutUs' component={AboutUs} /> 
-              <Route path='/ViewStories' component={ViewStories} />
-              <Route exact path='/StorySuggestion' component={StorySuggestion} />
-              <Route component={Error404} />
-            </Switch>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/AboutUs' component={AboutUs} /> 
+        <Route path='/ViewStories' component={ViewStories} />
+        <Route exact path='/StorySuggestion' component={StorySuggestion} />
+        <Route component={Error404} />
+      </Switch>
       
-        </div>
-    )
+    </div>
+  )
 }
 //using exact above helps protect us from accidently loading too many things
 export default App

@@ -4,12 +4,12 @@ import homepage from '../assets/images/wood_background.jpg'
 
 
 function Home() {
-    const HomeStyle = {
-        textAlign: 'center'
-    }
-    return (
-      <div style = {HomeStyle}>
-          <h1><style jsx> {`
+  const HomeStyle = {
+    textAlign: 'center'
+  }
+  return (
+    <div style = {HomeStyle}>
+      <h1><style jsx> {`
     h1 {
       color: black;
     }
@@ -17,8 +17,8 @@ function Home() {
       color: green;
     }
     `}</style>Heralding Harold</h1>
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Home

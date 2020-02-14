@@ -7,9 +7,9 @@ import React from 'react'
 // import HrHarold from '../assets/images/HrHarold.jpg';
 
 function AboutUs(){
-    return (
-      <div>
-          <h1><style jsx> {`
+  return (
+    <div>
+      <h1><style jsx> {`
     h1 {
       color: black;
     }
@@ -17,22 +17,22 @@ function AboutUs(){
       color: green;
     }
     `}</style>About Us</h1>
-            <h1>CEO</h1>
-            {/* <img src={CEOHarold}/> */}
-            <hr/>
-          <h1>Chief Editor</h1>
-          {/* <img src={ChiefEditorHarold}/> */}
-          <hr/>
-          <h1>VP of Finance</h1>
-          {/* <img src={FinaceHarold}/> */}
-          <br/>
-          <h1>Head of Receptionary</h1>
-          {/* <img src={ReceptionistHarold}/> */}
-          <hr/>
-          <h1>HR rep</h1>
-          {/* <img src={HrHarold}/> */}
-        </div>
-    )
+      <h1>CEO</h1>
+      {/* <img src={CEOHarold}/> */}
+      <hr/>
+      <h1>Chief Editor</h1>
+      {/* <img src={ChiefEditorHarold}/> */}
+      <hr/>
+      <h1>VP of Finance</h1>
+      {/* <img src={FinaceHarold}/> */}
+      <br/>
+      <h1>Head of Receptionary</h1>
+      {/* <img src={ReceptionistHarold}/> */}
+      <hr/>
+      <h1>HR rep</h1>
+      {/* <img src={HrHarold}/> */}
+    </div>
+  )
 }
 
 export default AboutUs
