@@ -1,14 +1,13 @@
 
 import React from 'react'
 import Header from './Header'
-import Stories from './Stories'
 import { Switch, Route } from 'react-router-dom'
 import ViewStories from './ViewStories'
 import Error404 from './Error404'
 import AboutUs from './AboutUs'
 import Home from './Home'
 import StorySuggestion from './StorySuggestion'
-import Image from '../assets/images/wood_background.jpg'
+import Image from '../assets/images/background.jpg'
 
 function App(){
   const BackgroundStyle = {
@@ -28,9 +27,8 @@ function App(){
       
       <Header/>
       <Switch>
-        <Route exact path='/' component={Home} />
+      <Route path='/' component={ViewStories} />
         <Route exact path='/AboutUs' component={AboutUs} /> 
-        <Route path='/ViewStories' component={ViewStories} />
         <Route exact path='/StorySuggestion' component={StorySuggestion} />
         <Route component={Error404} />
       </Switch>

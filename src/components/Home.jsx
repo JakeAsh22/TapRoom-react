@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import homepage from '../assets/images/wood_background.jpg'
-
 
 function Home() {
   const HomeStyle = {

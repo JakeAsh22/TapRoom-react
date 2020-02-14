@@ -1,11 +1,5 @@
 import React from 'react'
 import Stories from './Stories'
-// import CEOHarold from '../assets/images/CEOHarold.jpg';
-// import ChiefEditorHarold from '../assets/images/ChiefEditorHarold.jpg';
-// import FinaceHarold from '../assets/images/FinanceHarold.jpg';
-// import ReceptionistHarold from '../assets/images/ReceptionistHarold.jpg';
-// import HrHarold from '../assets/images/HrHarold.jpg';
-
 
 
 var masterViewStories = [
@@ -30,7 +24,7 @@ var masterViewStories = [
 
 function ViewStories(){
   const PageStyle = {
-    backgroundColor: 'blue'
+    backgroundColor: '#e3d3b5'
   }
 
   return (

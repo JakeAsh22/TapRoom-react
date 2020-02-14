@@ -3,14 +3,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function Staff(props){
+    const WordStyles = {
+        fontFamily: 'Impact, Charcoal, sans-serif'
+    }
   return (
-    <div>
+    <div style = {WordStyles}>
       <h3>{props.location} - {props.names}</h3>
-      <p>   <style global jsx>{`
-        p {
-          color: red;
-        }
-      `}</style><em>{props.issue} - {props.picture}</em></p>
+      <p> <em>{props.issue} - {props.picture}</em></p>
       <hr/>
     </div>
   )
