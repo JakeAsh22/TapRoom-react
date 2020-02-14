@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 function Error404(props){
   const PageStyle = {
-    backgroundColor: '#b8a98f'
+    backgroundColor: '#b8a98f',
+    opacity: '0.8'
   }
   return (
     <div style ={PageStyle}>

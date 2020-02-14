@@ -11,7 +11,7 @@ function Header() {
   }
   return (
     <div style ={WordStyles}>
-      <Link to="/">Home</Link> | <Link to="/AboutUs">About us</Link> | <Link to="/StorySuggestion">Add a new tap</Link>
+      <Link to="/">Home</Link> | <Link to="/NewTap">Add a new tap</Link>
       <hr/>
     </div>
   )

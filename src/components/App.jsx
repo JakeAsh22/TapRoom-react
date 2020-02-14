@@ -3,9 +3,8 @@ import React from 'react'
 import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import Error404 from './Error404'
-import AboutUs from './AboutUs'
 import Home from './Home'
-import StorySuggestion from './StorySuggestion'
+import NewTap from './NewTap'
 import Image from '../assets/images/wood_background.jpg'
 
 function App(){
@@ -27,8 +26,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/AboutUs' component={AboutUs} /> 
-        <Route exact path='/StorySuggestion' component={StorySuggestion} />
+        <Route exact path='/NewTap' component={NewTap} />
         <Route component={Error404} />
       </Switch>
       

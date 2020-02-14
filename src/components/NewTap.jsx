@@ -6,10 +6,9 @@ function StorySuggestion(){
     <div>
       <h1><style jsx> {`
     h1 {
-      color: black;
-    }
-    h1:hover {
-      color: green;
+        color: #bab4b2;
+      text-align: center;
+      font-family: Impact, Charcoal, sans-serif;
     }
     `}</style>Add a new tap</h1>
     
