@@ -2,6 +2,27 @@
 import React from 'react'
 
 function StorySuggestion(){
+  const BoxMaker = {
+    marginLeft: '20px',
+    border: '15px #FFFFFF',
+    padding: '15px',
+    margin: '20px',
+    borderRadius: '5px',
+    fontFamily: 'Circular',
+    color: '#484848',
+    boxShadow: '0 16px 40px rgba(0,0,0,0.12)',
+    backgroundColor: '#b8a98f',
+    opacity: '0.85'
+    }
+    const Inline = {
+        display: 'inline-block'
+    }
+    const LabelChange = {
+        display: 'block'
+    }
+    const ButtonFloat = {
+        float: 'right'
+    }
   return(
     <div>
       <h1><style jsx> {`
@@ -12,19 +33,26 @@ function StorySuggestion(){
     }
     `}</style>Add a new tap</h1>
     
-      <form>
-        <input  
-          type='text'
-          id='name'
-          placeholder="Drink Name"/>
-        <input 
-          type='text'
-          id='type'
-          placeholder='Type of drink'/>
-        <input
-          id='ABV'
-          placeholder='ABV (Alcohol by Volume)'/>
-      </form>
+    <div style = {BoxMaker}>
+            <h1>Enter the new tap's information</h1>
+            <form>
+                <label>Brand</label>
+                <br></br>
+                <input type="text"></input>
+                <br/>
+                <br/>
+                <div style={Inline}>
+                    <label style = {LabelChange}>Type</label>
+                    <input type="text"></input>
+                </div>
+                <div style={Inline}>
+                    <label style = {LabelChange}>ABV</label>
+                    <input type="text"></input>
+                </div>
+                <br/>
+                <button type="submit" style = {ButtonFloat}>Search</button>
+            </form>
+          </div>
     </div>
   )
 }
