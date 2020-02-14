@@ -32,8 +32,12 @@ function ViewStories(){
       <h1><style jsx> {`
     h1 {
       color: #bab4b2;
+      text-align: center;
+      font-family: Impact, Charcoal, sans-serif;
     }
-    `}</style>View Stories</h1>
+
+    }
+    `}</style>Wecome to the Epicodus Tap Room</h1>
      
       <hr/>
       <div style = {PageStyle}>
