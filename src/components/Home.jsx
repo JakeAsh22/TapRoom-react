@@ -1,6 +1,5 @@
 import React from 'react'
 import Stories from './Stories'
-import Beers from '../assets/images/beer.png'
 
 var masterViewStories = [
   {
@@ -22,10 +21,7 @@ var masterViewStories = [
 ]
 
 function ViewStories(){
-  const picStyle = {
-    height: '1px',
-    width: '1px'
-  }
+
   const BoxStyle = {
     marginLeft: '20px',
     border: '15px #FFFFFF',
@@ -38,23 +34,23 @@ function ViewStories(){
     backgroundColor: '#b8a98f',
     opacity: '0.85'
   }
+  const TextStyle = {
+    color: '#bab4b2',
+    textAlign: 'center',
+    fontFamily: 'Impact, Charcoal, sans-serif'
+  }
 
   return (
     <div>
-      <div style = {picStyle}>
-        <img src={Beers}/>
-      </div>
-      <h1><style jsx> {`
-    h1 {
-      color: #bab4b2;
-      text-align: center;
-      font-family: Impact, Charcoal, sans-serif;
-    }
 
-    }
-    `}</style>Wecome to Buzzed Bob's Bar</h1>
+
+      <div style = {TextStyle}>
+      <h1>Wecome to Buzzed Bob's Bar</h1>
      
       <hr/>
+      <h2>Menu</h2>
+      </div>
+      
       <div style = {BoxStyle}>
         {masterViewStories.map((stories, index) =>
           <Stories names={stories.names}
