@@ -6,4 +6,4 @@ They also grow different crops in different seasons. They'd like to display what
 
 Using React and all other tools we've covered so far, create an aesthetically-pleasing site that depicts this information. The data you'll use is in the Cheat Sheet section of this lesson. Also, take time to construct your entire environment from scratch; it's important to practice these fundamentals before we increase the complexity of our projects later this week!
 
-![Diagram](src/assets/images/diagram.jpg)
+![Diagram](src/assets/images/Diagram.jpg)
