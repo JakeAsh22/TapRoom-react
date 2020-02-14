@@ -2,13 +2,23 @@
 import React from 'react'
 
 function StorySuggestion(){
+  const BoxLocation = {
+    textAlign: 'center',
+    display: 'block'
+  }
   const BoxMaker = {
     marginLeft: '20px',
+    display: 'inline-block',
+    textAlign: 'left',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     border: '15px #FFFFFF',
     padding: '15px',
     margin: '20px',
+    width: '400px',
     borderRadius: '5px',
-    fontFamily: 'Circular',
+    position: 'absolute',
+    fontFamily: 'Impact, Charcoal, sans-serif',
     color: '#484848',
     boxShadow: '0 16px 40px rgba(0,0,0,0.12)',
     backgroundColor: '#b8a98f',
@@ -21,7 +31,8 @@ function StorySuggestion(){
         display: 'block'
     }
     const ButtonFloat = {
-        float: 'right'
+        float: 'right',
+        fontFamily: 'Impact, Charcoal, sans-serif'
     }
   return(
     <div>
@@ -32,7 +43,7 @@ function StorySuggestion(){
       font-family: Impact, Charcoal, sans-serif;
     }
     `}</style>Add a new tap</h1>
-    
+    <div>
     <div style = {BoxMaker}>
             <h1>Enter the new tap's information</h1>
             <form>
@@ -53,6 +64,7 @@ function StorySuggestion(){
                 <button type="submit" style = {ButtonFloat}>Search</button>
             </form>
           </div>
+    </div>
     </div>
   )
 }
