@@ -1,9 +1,41 @@
-# Farmer's Market Circuit
+# Buzzed Bob's Bar
 
-Avery's Organics is a mid-sized farm in Northern Oregon that grows organic produce, and sells it at Farmer's Markets throughout town. Since they're at a different market almost every day they thought it would be helpful to start a website so customers can see which location they'll be at when.
+#### _C#, .NET: Eau Claire's Salon, Jake Ash, 2/14/2020_
 
-They also grow different crops in different seasons. They'd like to display what produce is available during which months on their site too.
+## Description
+Create a react application that can display the beers on the menu, and a form for adding new beers to the tap/menu.
 
-Using React and all other tools we've covered so far, create an aesthetically-pleasing site that depicts this information. The data you'll use is in the Cheat Sheet section of this lesson. Also, take time to construct your entire environment from scratch; it's important to practice these fundamentals before we increase the complexity of our projects later this week!
+## Diagram
 
 ![Diagram](src/assets/images/Diagram.jpg)
+
+## Application should have:
+
+- Linking between pages
+
+## Setup/Installation Requirements
+
+1. Clone this repo:
+```
+https://github.com/JakeAsh22/TapRoom-react
+```
+
+. Go into the repo and run this application: 
+```
+$ npm install
+$ npm run start
+```
+
+## Known Bugs
+* No known bugs at this time.
+
+## Support and contact details
+ jacob.ash1998@gmail.com
+
+## Technologies Used
+_Git, GitHub, JavaScript and React_
+
+
+## License
+
+Copyright © 2020 under the MIT License
