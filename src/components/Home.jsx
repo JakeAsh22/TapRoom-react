@@ -1,21 +1,24 @@
 import React from 'react'
-import Stories from './Stories'
+import Menu from './Menu'
 
 var masterViewStories = [
   {
     names: 'Miller Lite',
     type: 'Pilsner',
-    abv: '4.2%'
+    abv: '4.2%',
+    price: '$3.50'
   },
   {
     names: 'Guinness',
     type: 'Stout',
-    abv: '4.3%'
+    abv: '4.3%',
+    price: '$4.00'
   },
   {
     names: 'Sour Monkey',
     type: 'Sour',
-    abv: '9.5%'
+    abv: '9.5%',
+    price: '$6.00'
   }
 
 ]
@@ -52,10 +55,11 @@ function ViewStories(){
       </div>
       
       <div style = {BoxStyle}>
-        {masterViewStories.map((stories, index) =>
-          <Stories names={stories.names}
-            type={stories.type}
-            abv={stories.abv}
+        {masterViewStories.map((beers, index) =>
+          <Menu names={beers.names}
+            type={beers.type}
+            abv={beers.abv}
+            price = {beers.price}
             key={index}/>
         )}
       </div>

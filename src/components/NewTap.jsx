@@ -58,6 +58,12 @@ function StorySuggestion(){
               <input type="text"></input>
             </div>
             <br/>
+            <br/>
+            <div style={Inline}>
+              <label style = {LabelChange}>Price</label>
+              <input type="text"></input>
+            </div>
+            <br/>
             <button type="submit" style = {ButtonFloat}>Search</button>
           </form>
         </div>

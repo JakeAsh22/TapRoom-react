@@ -9,8 +9,8 @@ function Staff(props){
   }
   return (
     <div style = {WordStyles}>
-      <h3>{props.names} - {props.abv} abv</h3>
-      <p> <em>{props.type}</em></p>
+      <h3>{props.names} - {props.price}</h3>
+      <p> <em>{props.type} - {props.abv} abv</em></p>
       <hr/>
     </div>
   )
@@ -20,8 +20,8 @@ function Staff(props){
 Staff.propTypes = {
   names: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  abv: PropTypes.string,
-  picture: PropTypes.string
+  abv: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired
 }
 
 export default Staff
