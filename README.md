@@ -1,6 +1,6 @@
 # Buzzed Bob's Bar
 
-#### _C#, .NET: Eau Claire's Salon, Jake Ash, 2/14/2020_
+#### JavaScript, React Buzzed Bob's Bar, Jake Ash, 2/14/2020_
 
 ## Description
 Create a react application that can display the beers on the menu, and a form for adding new beers to the tap/menu.
