@@ -48,10 +48,10 @@ function ViewStories(){
 
 
       <div style = {TextStyle}>
-      <h1>Wecome to Buzzed Bob's Bar</h1>
+        <h1>Wecome to Buzzed Bob's Bar</h1>
      
-      <hr/>
-      <h2>Menu</h2>
+        <hr/>
+        <h2>Menu</h2>
       </div>
       
       <div style = {BoxStyle}>
