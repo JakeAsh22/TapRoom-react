@@ -9,6 +9,11 @@ Create a react application that can display the beers on the menu, and a form fo
 
 ![Diagram](src/assets/images/Diagram.jpg)
 
+
+## Screen Shots
+![Home Page](src/assets/images/homepage.png)
+![New Tap](src/assets/images/newtap.png)
+
 ## Application should have:
 
 - Linking between pages
