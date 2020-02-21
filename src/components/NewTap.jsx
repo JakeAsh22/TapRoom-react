@@ -1,7 +1,20 @@
 
 import React from 'react'
 
-function StorySuggestion(){
+function StorySuggestion(props) {
+  let _names = null;
+  let _type = null;
+  let _abv = null;
+  let _price = null;
+  function handleNewTapSubmission(event) {
+    event.preventDefault();
+    props.onNewTapCreation({ names: _names.value, type: _type.value, abv: _abv.value, price: 0.00 });
+    let _names = '';
+    let _type = '';
+    let _abv = '';
+
+  }
+
   const BoxLocation = {
     textAlign: 'center',
     display: 'block'
@@ -31,7 +44,7 @@ function StorySuggestion(){
     float: 'right',
     fontFamily: 'Impact, Charcoal, sans-serif'
   }
-  return(
+  return (
     <div>
       <h1><style jsx> {`
     h1 {
@@ -40,31 +53,46 @@ function StorySuggestion(){
       font-family: Impact, Charcoal, sans-serif;
     }
     `}</style>Add a new tap</h1>
-      <div style ={BoxLocation}>
-        <div style = {BoxMaker}>
+      <div style={BoxLocation}>
+        <div style={BoxMaker}>
           <h1>Enter the new tap's information</h1>
-          <form>
+          <form onSubmit={handleNewTapSubmission}>
             <label>Brand</label>
             <br></br>
-            <input type="text"></input>
-            <br/>
-            <br/>
+            <input
+              type="text"
+              id='names'
+              placeholder='Brand'
+              ref={(input) => { _names = input; }} />
+            <br />
+            <br />
             <div style={Inline}>
-              <label style = {LabelChange}>Type</label>
-              <input type="text"></input>
+              <label style={LabelChange}>Type</label>
+              <input type="text"
+                type="text"
+                id='type'
+                placeholder='type'
+                ref={(input) => { _type = input; }} />>
             </div>
             <div style={Inline}>
-              <label style = {LabelChange}>ABV</label>
-              <input type="text"></input>
+              <label style={LabelChange}>ABV</label>
+              <input type="text"
+                id='abv'
+                placeholder='abv'
+                ref={(input) => { _abv = input; }} />/>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div style={Inline}>
-              <label style = {LabelChange}>Price</label>
-              <input type="text"></input>
+              <label style={LabelChange}>Price</label>
+              <input
+                type="text"
+                id='price'
+                placeholder='price'
+                ref={(input) => { price = input; }} />/>
             </div>
-            <br/>
-            <button type="submit" style = {ButtonFloat}>Search</button>
+            <br />
+            <button type="submit" style={ButtonFloat}>Search</button>
           </form>
         </div>
       </div>
