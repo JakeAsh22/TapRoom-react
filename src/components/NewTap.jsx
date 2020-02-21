@@ -72,14 +72,14 @@ function StorySuggestion(props) {
                 type="text"
                 id='type'
                 placeholder='type'
-                ref={(input) => { _type = input; }} />>
+                ref={(input) => { _type = input; }} />
             </div>
             <div style={Inline}>
               <label style={LabelChange}>ABV</label>
               <input type="text"
                 id='abv'
                 placeholder='abv'
-                ref={(input) => { _abv = input; }} />/>
+                ref={(input) => { _abv = input; }} />
             </div>
             <br />
             <br />
@@ -89,7 +89,7 @@ function StorySuggestion(props) {
                 type="text"
                 id='price'
                 placeholder='price'
-                ref={(input) => { price = input; }} />/>
+                ref={(input) => { price = input; }} />
             </div>
             <br />
             <button type="submit" style={ButtonFloat}>Search</button>
