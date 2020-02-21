@@ -2,16 +2,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Staff(props){
+function Staff(props) {
   const WordStyles = {
     fontFamily: 'Impact, Charcoal, sans-serif',
     opacity: '1!important'
   }
   return (
-    <div style = {WordStyles}>
+    <div style={WordStyles}>
       <h3>{props.names} - {props.price}</h3>
-      <p> <em>{props.type} - {props.abv} abv</em></p>
-      <hr/>
+      <p> <em>{props.type} - {props.abv} abv </em></p>
+      <hr />
     </div>
   )
 }
