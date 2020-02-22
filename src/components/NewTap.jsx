@@ -1,17 +1,17 @@
 
 import React from 'react'
 
-function StorySuggestion(props) {
-  let _names = null;
-  let _type = null;
-  let _abv = null;
-  let _price = null;
+function BeerForm(props) {
+  let _names = null
+  let _type = null
+  let _abv = null
+  let _price = null
   function handleNewTapSubmission(event) {
-    event.preventDefault();
-    props.onNewTapCreation({ names: _names.value, type: _type.value, abv: _abv.value, price: 0.00 });
-    let _names = '';
-    let _type = '';
-    let _abv = '';
+    event.preventDefault()
+    props.onNewTapCreation({ names: _names.value, type: _type.value, abv: _abv.value, price: 0.00 })
+    let _names = ''
+    let _type = ''
+    let _abv = ''
 
   }
 
@@ -63,23 +63,23 @@ function StorySuggestion(props) {
               type="text"
               id='names'
               placeholder='Brand'
-              ref={(input) => { _names = input; }} />
+              ref={(input) => { _names = input }} />
             <br />
             <br />
             <div style={Inline}>
               <label style={LabelChange}>Type</label>
               <input type="text"
-                type="text"
+
                 id='type'
                 placeholder='type'
-                ref={(input) => { _type = input; }} />
+                ref={(input) => { _type = input }} />
             </div>
             <div style={Inline}>
               <label style={LabelChange}>ABV</label>
               <input type="text"
                 id='abv'
                 placeholder='abv'
-                ref={(input) => { _abv = input; }} />
+                ref={(input) => { _abv = input }} />
             </div>
             <br />
             <br />
@@ -89,7 +89,7 @@ function StorySuggestion(props) {
                 type="text"
                 id='price'
                 placeholder='price'
-                ref={(input) => { price = input; }} />
+                ref={(input) => { price = input }} />
             </div>
             <br />
             <button type="submit" style={ButtonFloat}>Search</button>
@@ -100,4 +100,8 @@ function StorySuggestion(props) {
   )
 }
 
-export default StorySuggestion
+BeerForm.propTypes = {
+  onNewTapCreation: PropTypes.func
+}
+
+export default BeerForm

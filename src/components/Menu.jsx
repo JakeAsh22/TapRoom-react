@@ -24,4 +24,4 @@ Staff.propTypes = {
   price: PropTypes.string.isRequired
 }
 
-export default Staff;
+export default Staff
