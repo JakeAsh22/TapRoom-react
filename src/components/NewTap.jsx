@@ -1,5 +1,5 @@
-
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function BeerForm(props) {
   let _names = null
@@ -61,7 +61,7 @@ function BeerForm(props) {
             <label>Brand</label>
             <br></br>
             <input
-              type="text"
+              type='text'
               id='names'
               placeholder='Brand'
               ref={(input) => { _names = input }} />
@@ -69,15 +69,16 @@ function BeerForm(props) {
             <br />
             <div style={Inline}>
               <label style={LabelChange}>Type</label>
-              <input type="text"
-
+              <input 
+                type='text'
                 id='type'
                 placeholder='type'
                 ref={(input) => { _type = input }} />
             </div>
             <div style={Inline}>
               <label style={LabelChange}>ABV</label>
-              <input type="text"
+              <input 
+                type='text'
                 id='abv'
                 placeholder='abv'
                 ref={(input) => { _abv = input }} />
@@ -87,10 +88,10 @@ function BeerForm(props) {
             <div style={Inline}>
               <label style={LabelChange}>Price</label>
               <input
-                type="text"
+                type='text'
                 id='price'
                 placeholder='price'
-                ref={(input) => { price = input }} />
+                ref={(input) => { _price = input }} />
             </div>
             <br />
             <button type="submit" style={ButtonFloat}>Search</button>
