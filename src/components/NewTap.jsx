@@ -9,9 +9,10 @@ function BeerForm(props) {
   function handleNewTapSubmission(event) {
     event.preventDefault()
     props.onNewTapCreation({ names: _names.value, type: _type.value, abv: _abv.value, price: 0.00 })
-    let _names = ''
-    let _type = ''
-    let _abv = ''
+    _names.value = '';
+    _type.value = '';
+    _abv.value = '';
+    _price.value = '';
 
   }
 
