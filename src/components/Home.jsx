@@ -2,7 +2,7 @@ import React from 'react'
 import Menu from './Menu'
 import PropTypes from 'prop-types'
 
-var masterHome = [
+var masterMenu = [
   {
     names: 'Miller Lite',
     type: 'Pilsner',
@@ -24,7 +24,7 @@ var masterHome = [
 
 ]
 
-function Home(){
+function Home(props){
 
   const BoxStyle = {
     marginLeft: '20px',
@@ -56,7 +56,7 @@ function Home(){
       </div>
       
       <div style = {BoxStyle}>
-        {masterHome.map((beers, index) =>
+        {props.home.map((beers, index) =>
           <Menu names={beers.names}
             type={beers.type}
             abv={beers.abv}
@@ -68,7 +68,7 @@ function Home(){
   )
 }
 Home.propTypes = {
-  onNewTapCreation: PropTypes.func
+  home: PropTypes.func
 }
 
 export default Home
