@@ -1,22 +1,19 @@
 # Buzzed Bob's Bar
 
-#### JavaScript, React Buzzed Bob's Bar, Jake Ash, 2/14/2020_
+#### _JavaScript, React Buzzed Bob's Bar, Jake Ash, 2/14/2020_
 
 ## Description
-Create a react application that can display the beers on the menu, and a form for adding new beers to the tap/menu.
+Create a stateful react application that can display the beers on the menu, and another page for the user to add more beers to the menu once the keg has been tapped.
 
 ## Diagram
 
 ![Diagram](src/assets/images/Diagram.jpg)
 
 
-## Screen Shots
-![Home Page](src/assets/images/homepage.png)
-![New Tap](src/assets/images/newtap.png)
-
 ## Application should have:
 
 - Linking between pages
+- Ability to add new Tapped Kegs to the menu
 
 ## Setup/Installation Requirements
 
@@ -25,20 +22,26 @@ Create a react application that can display the beers on the menu, and a form fo
 https://github.com/JakeAsh22/TapRoom-react
 ```
 
-. Go into the repo and run this application: 
+2. Go into the repo and run this application: 
 ```
 $ npm install
 $ npm run start
 ```
+3. Go to the localhost to view 
+```
+http://localhost:8080/
+```
 
 ## Known Bugs
-* No known bugs at this time.
+```
+No known bugs at this time.
+```
 
 ## Support and contact details
- jacob.ash1998@gmail.com
+jacob.ash1998@gmail.com
 
 ## Technologies Used
-_Git, GitHub, JavaScript and React_
+_Git, GitHub, JavaScript, React, npm, and lint_
 
 
 ## License
