@@ -16,6 +16,7 @@ function BeerForm(props) {
 
   }
 
+
   const BoxLocation = {
     textAlign: 'center',
     display: 'block'
@@ -45,6 +46,8 @@ function BeerForm(props) {
     float: 'right',
     fontFamily: 'Impact, Charcoal, sans-serif'
   }
+
+
   return (
     <div>
       <h1><style jsx> {`

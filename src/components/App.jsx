@@ -4,34 +4,52 @@ import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import Error404 from './Error404'
 import Home from './Home'
+import Menu from './menu'
 import NewTap from './NewTap'
 import Image from '../assets/images/wood_background.jpg'
 
-function App(){
-  const BackgroundStyle = {
-    // /* The image used */
-    backgroundImage: `url(${Image})`,
+class App extends React.Component{
 
-    /* Full height */
-    backgroundPosition: 'fixed', 
-    backgroundSize: 'cover',
-    backgroundRepeat: 'repeat',
-    minHeight: '100vh',
-    minWidth: '100%'
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterMenu: []
+    };
+    this.handleAddingNewTapToMenu = this.handleAddingNewTapToMenu.bind(this);
   }
-  return (
-    <div style={BackgroundStyle}>
-      
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/NewTap' component={NewTap} />
-        <Route component={Error404} />
-      </Switch>
-      
-    </div>
-  )
+  handleAddingNewTapToMenu(newTap) {
+    var newMasterMenu = this.state.masterMenu.slice();
+    newMasterMenu.push(newTap);
+    this.setState({masterMenu: newMasterMenu});
+  }
+
+  render(){
+    const BackgroundStyle = {
+      // /* The image used */
+      backgroundImage: `url(${Image})`,
+  
+      /* Full height */
+      backgroundPosition: 'fixed', 
+      backgroundSize: 'cover',
+      backgroundRepeat: 'repeat',
+      minHeight: '100vh',
+      minWidth: '100%'
+  
+    }
+
+    return (
+      <div style={BackgroundStyle}>
+        
+        <Header/>
+        <Switch>
+          <Route exact path='/' render = {()=><Menu menu={this.state.masterMenu} />} />
+          <Route exact path='/NewTap' render={()=><NewTap onNewTapCreation={this.handleAddingNewTapToMenu}/>} />
+          <Route component={Error404} />
+        </Switch>
+        
+      </div>
+    )
+  }
 }
 //using exact above helps protect us from accidently loading too many things
 export default App

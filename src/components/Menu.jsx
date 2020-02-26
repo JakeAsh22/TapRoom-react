@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Staff(props) {
+function Menu(props) {
   const WordStyles = {
     fontFamily: 'Impact, Charcoal, sans-serif',
     opacity: '1!important'
@@ -17,11 +17,11 @@ function Staff(props) {
 }
 // propTypes is declaring a propTypes property on our Staff componenent
 // PropTypes is referring to the PropTypes class we import at the top
-Staff.propTypes = {
+Menu.propTypes = {
   names: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   abv: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired
 }
 
-export default Staff
+export default Menu
