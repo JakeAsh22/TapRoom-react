@@ -4,23 +4,22 @@ import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import Error404 from './Error404'
 import Home from './Home'
-import Menu from './menu'
 import NewTap from './NewTap'
 import Image from '../assets/images/wood_background.jpg'
 
 class App extends React.Component{
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       masterMenu: []
-    };
-    this.handleAddingNewTapToMenu = this.handleAddingNewTapToMenu.bind(this);
+    }
+    this.handleAddingNewTapToMenu = this.handleAddingNewTapToMenu.bind(this)
   }
   handleAddingNewTapToMenu(newTap) {
-    var newMasterMenu = this.state.masterMenu.slice();
-    newMasterMenu.push(newTap);
-    this.setState({masterMenu: newMasterMenu});
+    var newMasterMenu = this.state.masterMenu.slice()
+    newMasterMenu.push(newTap)
+    this.setState({masterMenu: newMasterMenu})
   }
 
   render(){

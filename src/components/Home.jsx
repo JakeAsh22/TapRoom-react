@@ -54,8 +54,16 @@ function Home(props){
         <hr/>
         <h2>Menu</h2>
       </div>
-      
+
       <div style = {BoxStyle}>
+        {masterMenu.map((beers, index) =>
+          <Menu names={beers.names}
+            type={beers.type}
+            abv={beers.abv}
+            price = {beers.price}
+            key={index}/>
+        )}
+    
         {props.home.map((beers, index) =>
           <Menu names={beers.names}
             type={beers.type}

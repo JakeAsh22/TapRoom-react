@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 function BeerForm(props) {
   let _names = null
@@ -9,10 +9,10 @@ function BeerForm(props) {
   function handleNewTapSubmission(event) {
     event.preventDefault()
     props.onNewTapCreation({ names: _names.value, type: _type.value, abv: _abv.value, price: _price.value })
-    _names.value = '';
-    _type.value = '';
-    _abv.value = '';
-    _price.value = '';
+    _names.value = ''
+    _type.value = ''
+    _abv.value = ''
+    _price.value = ''
 
   }
 
