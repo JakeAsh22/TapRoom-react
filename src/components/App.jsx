@@ -42,7 +42,7 @@ class App extends React.Component{
         
         <Header/>
         <Switch>
-          <Route exact path='/' render = {()=><Menu menu={this.state.masterMenu} />} />
+          <Route exact path='/' render = {()=><Home home={this.state.masterMenu} />} />
           <Route exact path='/NewTap' render={()=><NewTap onNewTapCreation={this.handleAddingNewTapToMenu}/>} />
           <Route component={Error404} />
         </Switch>

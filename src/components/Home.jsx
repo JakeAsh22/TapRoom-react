@@ -1,7 +1,8 @@
 import React from 'react'
 import Menu from './Menu'
+import PropTypes from 'prop-types'
 
-var masterViewStories = [
+var masterHome = [
   {
     names: 'Miller Lite',
     type: 'Pilsner',
@@ -23,7 +24,7 @@ var masterViewStories = [
 
 ]
 
-function ViewStories(){
+function Home(){
 
   const BoxStyle = {
     marginLeft: '20px',
@@ -55,7 +56,7 @@ function ViewStories(){
       </div>
       
       <div style = {BoxStyle}>
-        {masterViewStories.map((beers, index) =>
+        {masterHome.map((beers, index) =>
           <Menu names={beers.names}
             type={beers.type}
             abv={beers.abv}
@@ -66,5 +67,8 @@ function ViewStories(){
     </div>
   )
 }
+Home.propTypes = {
+  onNewTapCreation: PropTypes.func
+}
 
-export default ViewStories
+export default Home
